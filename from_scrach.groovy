@@ -8,9 +8,8 @@ node {
 
 
 
-
-    stage("Stage1") {
-        echo "Hello"
+    stage("Pull repo") {
+        git "https://github.com/farrukh90/cool_website.git"
     }
      stage("Stage2") {
         echo "Hello"
